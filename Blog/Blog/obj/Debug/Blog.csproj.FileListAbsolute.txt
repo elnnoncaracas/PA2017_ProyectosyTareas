@@ -1,1 +1,6 @@
 C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\bin\Debug\Blog.exe.config
+C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\bin\Debug\Blog.exe
+C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\bin\Debug\Blog.pdb
+C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
+C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\obj\Debug\Blog.exe
+C:\Users\Elnnon\Documents\GitHub\PA2017_ProyectosyTareas\Blog\Blog\obj\Debug\Blog.pdb
