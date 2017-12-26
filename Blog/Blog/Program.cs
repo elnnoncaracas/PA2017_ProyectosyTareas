@@ -14,6 +14,12 @@ namespace Blog
             Cal.comentar("Kal - ","El","Oie ke zukulento");
             Console.WriteLine("Lo que"+"\t"+Cal.Nombre+Cal.Apellido+" Comento fue: "+Cal.Comentario);
             Console.ReadKey();
+            Autor ahh = new Autor();
+            ahh.comentar("El Autor: ","hey","Los autores tambien comentan");
+            ahh.redactar(1,"La redaccion de blogs","Aprende a redactar un blog","Juanito","Verde");
+            Console.WriteLine(ahh.Comentario+"\n");
+            Console.WriteLine(ahh.descripcion);
+            Console.ReadKey();
 
         }
     }

@@ -10,13 +10,16 @@ namespace Blog
     {
        string nombre { get; set; }
         string apellido { get; set; }
-        string titulo { get; set;}
+      public  string titulo { get; set;}
+      public  string descripcion { get; set; }
 
-        public void redactar(int idart, string titulo, string descripcion, string texto) {
+        public void redactar() { }
+        public void redactar(int idart, string titulo, string descripcion, string nombre, string apellido) {
 
             this.nombre = Nombre;
             this.apellido = Apellido;
             this.titulo= titulo;
+            this.descripcion = descripcion;
 
         
         }
