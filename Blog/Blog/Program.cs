@@ -10,9 +10,11 @@ namespace Blog
     {
         static void Main(string[] args)
         {
-            Usuario calu = new Usuario(1,"juanito","caso","olakease@guis.se");
-            Console.WriteLine(calu.Id+calu.Nombre+calu.Apellido);
+            Usuario Cal = new Usuario();
+            Cal.comentar("Kal - ","El","Oie ke zukulento");
+            Console.WriteLine("Lo que"+"\t"+Cal.Nombre+Cal.Apellido+" Comento fue: "+Cal.Comentario);
             Console.ReadKey();
+
         }
     }
 }

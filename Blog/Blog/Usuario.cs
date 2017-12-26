@@ -9,10 +9,10 @@ namespace Blog
     class Usuario
     {
         public int id;
-        public string nombre, apellido, email;
+        public string nombre, apellido, email, comentario;
 
-        public Usuario(){}
-        public Usuario(int id, string nombre, string apellido, string email)
+        public void MoUsuario(){}
+        public void MoUsuario(int id, string nombre, string apellido, string email)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
@@ -24,7 +24,16 @@ namespace Blog
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Email { get; set; }
-        
+        public string Comentario { get; set; }
+
+        public void comentar() { }
+        public void comentar(string nombre, string apellido, string comentario) {
+
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Comentario = comentario;
+        }
 
     }
+   
 }
