@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blog
 {
-    class Usuario
+    public class Usuario
     {
         public int id;
         public string nombre, apellido, email, comentario;
@@ -34,6 +34,10 @@ namespace Blog
             this.Comentario = comentario;
         }
 
+        public void leerart()
+        {
+         
+        }
     }
    
 }

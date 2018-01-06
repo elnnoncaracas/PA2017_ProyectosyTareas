@@ -8,8 +8,8 @@ namespace Blog
 {
     class Autor : Usuario
     {
-       string nombre { get; set; }
-        string apellido { get; set; }
+       private string nombre { get; set; }
+       private string apellido { get; set; }
       public  string titulo { get; set;}
       public  string descripcion { get; set; }
 
@@ -24,5 +24,17 @@ namespace Blog
         
         }
 
+        public void editar() { }
+        public void editar(string titulo, string descripcion)
+        {
+            Console.WriteLine("El Titulo actual es: " + this.titulo);
+            Console.WriteLine("La descripcion dice: " + this.descripcion);
+            this.descripcion = descripcion;
+            this.titulo = titulo;
+
+            Console.WriteLine("El Titulo nuevo es: " + this.titulo);
+            Console.WriteLine("La descripcion nueva dice: " + this.descripcion);
+
+        }
     }
 }

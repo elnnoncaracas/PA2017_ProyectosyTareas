@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog
+namespace EjercicioPolimorfismoPA2017DOM
 {
-    class Lector:Usuario
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
