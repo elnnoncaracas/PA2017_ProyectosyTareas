@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace EjercicioPolimorfismoPA2017DOM
 {
-    class Curso
+    interface IModificarLista
     {
-        public string NombreCurso { get; set; }
+       void agregarItems();
+        void listarItems(); 
+
     }
+
+    
 }

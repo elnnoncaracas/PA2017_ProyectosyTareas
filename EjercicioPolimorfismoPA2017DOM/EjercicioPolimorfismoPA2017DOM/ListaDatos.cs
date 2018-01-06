@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Listas
+namespace EjercicioPolimorfismoPA2017DOM
 {
     class ListaDatos<T>
     {
