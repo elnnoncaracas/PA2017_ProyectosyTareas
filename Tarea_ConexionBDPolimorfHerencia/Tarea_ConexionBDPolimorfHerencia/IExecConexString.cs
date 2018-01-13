@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tarea_ConexionBDPolimorfHerencia
 {
-    interface ExecConexString
+    interface IExecConexString
     {
+        void conectarBD();
+void desconectarBD();
     }
 }

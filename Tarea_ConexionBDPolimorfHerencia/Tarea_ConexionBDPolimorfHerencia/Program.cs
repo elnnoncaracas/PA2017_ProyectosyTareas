@@ -10,6 +10,10 @@ namespace Tarea_ConexionBDPolimorfHerencia
     {
         static void Main(string[] args)
         {
+            ListaString lsi = new ListaString();
+            lsi.conectarBD();
+            
+            Console.ReadKey();
         }
     }
 }
