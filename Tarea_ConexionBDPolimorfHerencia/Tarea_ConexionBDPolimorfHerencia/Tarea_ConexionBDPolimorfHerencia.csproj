@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="IExecConexString.cs" />
     <Compile Include="ListaString.cs" />
+    <Compile Include="Mdatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

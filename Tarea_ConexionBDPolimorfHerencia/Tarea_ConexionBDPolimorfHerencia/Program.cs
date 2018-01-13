@@ -12,7 +12,12 @@ namespace Tarea_ConexionBDPolimorfHerencia
         {
             ListaString lsi = new ListaString();
             lsi.conectarBD();
-            
+            Console.WriteLine("Presiona cualquier tecla para continuar");
+            Console.ReadKey();
+            Mdatos showdata = new Mdatos();
+            showdata.MdatosDB();
+            Console.WriteLine("Presiona cualquier tecla para continuar");
+            lsi.desconectarBD();
             Console.ReadKey();
         }
     }
