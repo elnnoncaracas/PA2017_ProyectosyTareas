@@ -9,7 +9,7 @@ namespace Tarea_ConexionBDPolimorfHerencia
     interface IExecConexString
     {
         void conectarBD();
-        void desconectarBD();
+       // void desconectarBD();
 
        
     }

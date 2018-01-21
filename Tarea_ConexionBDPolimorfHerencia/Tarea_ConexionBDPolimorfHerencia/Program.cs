@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Npgsql;
+using System.Data.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,13 @@ namespace Tarea_ConexionBDPolimorfHerencia
     {
         static void Main(string[] args)
         {
-            
+
+            Scratchpad csd = new Scratchpad();
+
+            csd.conectarBD();
+            csd.commander();
+
+            /*
             Console.WriteLine("Hola, por favor selecciona una opcion: \n\n\n");
             Console.WriteLine("\t\t\t1. Ejecutar Consulta SQL por Defecto");
             Console.WriteLine("\t\t\t2. Escribir consulta SQL Personalizada");
@@ -43,7 +51,10 @@ namespace Tarea_ConexionBDPolimorfHerencia
                 default:
                     Console.WriteLine("Opcion no valida para este menú");
                     break;
+        }*/
+           
+        
         }
-        }
+
     }
 }
