@@ -12,6 +12,7 @@ namespace Tarea_ConexionBDPolimorfHerencia
 {
    public class Scratchpad:IExecConexString
     {
+        public DbConnection Conx { get; private set; }
 
         public void conectarBD() {
 
@@ -25,7 +26,7 @@ namespace Tarea_ConexionBDPolimorfHerencia
         {
             Conx.Open();
             Console.WriteLine(Conx.State);
-
+            
             Conx.Close();
             Console.WriteLine(Conx.State);
         }
@@ -33,11 +34,13 @@ namespace Tarea_ConexionBDPolimorfHerencia
         {
 
             NpgsqlCommand como = new NpgsqlCommand("SELECT * FROM \"public\".\"spatial_ref_sys\" LIMIT 5");
-            pasacmd(como);
+            
+                pasacmd(Conx, como);
             
 
         }
-        public void pasacmd(DbCommand cmd) {
+        public void pasacmd(DbConnection Conx, DbCommand cmd) {
+            Conx.Open();
             cmd.ExecuteReader();
             DbDataReader dr = cmd.ExecuteReader();
 
@@ -48,6 +51,7 @@ namespace Tarea_ConexionBDPolimorfHerencia
                 Console.WriteLine("id: {0} - name: {1}", id, name);
             }
 
+            Conx.Close();
         }
         
 
